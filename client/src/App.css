@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f6e0b5;;
     color: #333;
   }
   
@@ -12,13 +12,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* min-height: 100vh; */
+    min-height: auto;
+    background-color: #f6e0b5;
     padding: 20px;
-    border-radius: 10px;
   }
-  
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color:#eea990;
+  }
   .app-title {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -40,7 +46,16 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
+  .account-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.account-info {
+  font-size: 1.2rem;
+  color: #444;
+  font-weight: bold;
+}
   .order-button {
     background-color: #28a745;
     color: white;
@@ -74,4 +89,84 @@ body {
     background-color: teal;
     color: white;
   }
+  @keyframes fadeSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   
+  /* Footer styles */
+  @keyframes float {
+    0% {
+      transform: translateX(-100%); /* Start off-screen to the left */
+    }
+    50% {
+      transform: translateX(0); /* Move to the center */
+    }
+    100% {
+      transform: translateX(100%); /* Move off-screen to the right */
+    }
+  }
+  
+  /* Footer styles */
+  @keyframes float {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Footer styles */
+  .app-header {
+    position: relative;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #282c34;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+    animation: float 5s linear 1;
+  }
+  
+  .app-header p {
+    margin: 0;
+  }
+  .app-footer {
+    width: 100%; /* Make the footer full width */
+    height: 150px; /* Set the height of the footer */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background-color: #f6e0b5;
+    color: white;
+    position: relative; /* Ensure proper positioning of the footer */
+  }
+  
+  .footer-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin: 0 10px; /* Add margin between images */
+  }
+  
+  /* Optional: Additional styles for responsive design */
+  @media (max-width: 600px) {
+    .footer-image {
+      width: 80px; /* Adjust image size for smaller screens */
+      margin: 0 5px; /* Adjust margin for smaller screens */
+    }
+  
+    .app-footer {
+      height: 120px; /* Adjust height for smaller screens */
+    }
+  }

@@ -1,0 +1,77 @@
+/* App.css */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .app-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .order-button,
+  .refresh-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .order-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .order-button:hover {
+    background-color: #218838;
+  }
+  
+  .refresh-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .refresh-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .order-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .order-count {
+    padding: 0px 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    /* cursor: pointer; */
+    transition: background-color 0.3s ease;
+    background-color: teal;
+    color: white;
+  }
+  
